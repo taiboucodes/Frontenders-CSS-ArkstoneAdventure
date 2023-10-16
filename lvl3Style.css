@@ -50,24 +50,44 @@ body {
 #FirstContentBox, #SecondContentBox, #ThirdContentBox {
     position: absolute;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(153, 69, 0, 0.8); /* Blood orange with alpha 0.8 */
     border-radius: 10px;
+	width: 5vw;
+	height: 2vw;
 }
 
 #FirstContentBox {
-    bottom: 30vw;
+    position: absolute;
+    top: 18vw; /* Adjust the top position accordingly */
     left: 38vw;
 }
 
 #SecondContentBox {
-   bottom: 30vw;
+    position: absolute;
+    top: 18vw; /* Adjust the top position accordingly */
     left: 48vw;
 }
 
 #ThirdContentBox {
-   bottom: 30vw;
+    position: absolute;
+    top: 18vw; /* Adjust the top position accordingly */
     left: 58vw;
 }
+
+/* Text style for boxes */
+#FirstContentBox a,
+#SecondContentBox a,
+#ThirdContentBox a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white; /* Change the link color to suit your design */
+    font-size: 1vw; /* Adjust the font size proportionate to the box */
+}
+
 .lostWoods {
     background-image: url('backgrounds/lostWoods.jpg');
     width: 100%;
