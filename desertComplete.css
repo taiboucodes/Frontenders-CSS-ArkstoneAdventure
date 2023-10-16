@@ -95,9 +95,9 @@ body {
 }
 #bubble-text {
     position: absolute;
-    font-size: 12pt;
-    right: 40px;
-    top: 180px;
+    font-size: 16pt;
+    right: 70px;
+    top: 200px;
 }
 .Portal img {
     width: 250px;
@@ -106,13 +106,31 @@ body {
     bottom: 20px;
     position: absolute;
 }
+.blue-portal img {
+    width: 270px;
+    height: auto;
+    position: absolute;
+    right: 135px;
+    bottom: 20px;
+}
+#next-stage {
+    position: absolute;
+    bottom: 310px;
+    right: 156px;
+    text-decoration: none;
+    color: #03f8af;
+    
+}
+#next-stage:hover {
+    color: rgb(0, 81, 255);
+}
 .Spaceman img {
     width: 200px;
     height: auto;
     position: absolute;
     bottom: 50px;
     opacity: 0;
-    animation: moveRight 3s linear 3s forwards, fadeIn 3s ease-out 3s forwards;
+    animation: moveRight 3s linear 3s forwards, fadeIn 1s ease-out 3s forwards, fadeOut 1s ease-out 5.5s forwards;
 }
 @keyframes moveRight {
     0% {
@@ -129,6 +147,14 @@ body {
     }
     100% { 
         opacity: 1; 
+    }
+}
+@keyframes fadeOut {
+    0% { 
+        opacity: 1; 
+    }
+    100% { 
+        opacity: 0; 
     }
 }
 .Sandstorm img {
