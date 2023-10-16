@@ -48,11 +48,36 @@
     background-color: transparent; 
 }
 #TextStyle {
-    font-size: 17pt;
+    font-size: 14pt;
     font-family: "Verdana", sans-serif;
     text-align: center;
     font-weight: bold;
     text-shadow: 1px 1px #8C001A;
+    align-items: center;
+}
+#option1 {
+    font-size: 20pt;
+    font-family: "Verdana", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    margin: auto; 
+    color: rgb(236, 221, 23);
+}
+#option2{
+    font-size: 20pt;
+    font-family: "Verdana", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    margin:auto;
+    color: rgb(48, 39, 39);
+}
+.button {
+   
+    text-decoration: none;
+    text-align: center;
+
 }
 .ship-image {
     position: right;
@@ -60,20 +85,13 @@
     left: 945px;
     width: 600px; 
 }
-
 .spaceman{
-    /* position: absolute; */
-    /* bottom: 63%; */
-    /* left: 0; */
-    /* width: 200px; */
+
     background: transparent;
     width: 15vw;
     height: auto;
-    /* position: absolute; */
-    /* top: 5%; */
-    /* left: 50%; */
     animation: character 7s ease 1 forwards;
-    animation-play-state: running 2s, paused, running 2s */
+    
  }   
   
 
@@ -86,12 +104,15 @@
     }
 }
 
+/* This implimentation of the animation makes the spaceman come from the left portal to the stopping point which is set by the tresure box */
+
 .treasure-box {
+    background: transparent;
     position: absolute;
     top: 57%; 
     left: 635px;
     width: 150px; 
-    animation: box;
+    z-index: 1;
 }
 .platform{
     position: absolute;
@@ -110,7 +131,7 @@
    }
  }
 
-
+/* The transform keyframe makes the platform gif go on in a loop from the selected part of the page  */
 
 .unknown-image {
     position: absolute;
