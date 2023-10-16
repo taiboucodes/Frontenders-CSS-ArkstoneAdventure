@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<title> Black Hole </title> 
+<style>
+body { 
+display: flex;
+background-position: center;
+background-image: url('Black Hole Image.gif');
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+
+.spaceGuy-image {
+position: absolute;
+width: 800px;
+top:10%;
+Left:26%;
+background: transparent;
+animation-name: spaceGuyShrinking;
+animation-duration: 3s;
+visibility: hidden;
+}
+
+@keyframes spaceGuyShrinking {
+from {width:800px; rotate: 360deg; opacity: 1; visibility: visible;}
+to {top:50%; left:50%; width:0px; opacity: 0; visibility: visible;}
+}
+
+@keyframes fadeOut { 
+0% { opacity: 1; }
+100% { opacity: 0; }
+}
+
+</style>
+</head> 
+
+<body> 
+<img src = "spaceGuy.png" alt ="spaceguy" class = "spaceGuy-image"> 
+</body>
+</html>
