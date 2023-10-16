@@ -31,9 +31,27 @@ body {
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha (fourth value) as needed for transparency */
 }
-
+#FirstContentBox{
+    position: absolute;
+	bottom: 8vw;
+    padding: 10px;
+    background-color: rgba(153, 69, 0, 0.8); /* Blood orange with alpha 0.8 */
+    border-radius: 10px;
+	width: 5vw;
+	height: 2vw;
+}
+#FirstContentBox a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white; /* Change the link color to suit your design */
+    font-size: 1vw; /* Adjust the font size proportionate to the box */
+}
 .blackhole {
-    background-image: url('blackhole.gif');
+    background-image: url('backgrounds/blackhole.gif');
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -43,14 +61,6 @@ body {
     left: 0;
 }
 
-.spaceMan img {
-    max-width: 30vw; 
-    height: auto; /* Maintain aspect ratio */
-    filter: invert(100%); /* Invert the color */
-    position: absolute; /* Position it absolutely */
-    top: -30px; /* Position from the top */
-    left: 0; /* Position from the left */
-}
 
 .spaceGuy img {
     width: 22vw;
