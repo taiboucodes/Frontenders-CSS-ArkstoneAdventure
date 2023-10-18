@@ -97,11 +97,13 @@ body {
     #FirstContentBox{
       position: absolute;
     bottom: 8vw;
+	left: 20vw;
       padding: 10px;
       background-color: rgba(153, 69, 0, 0.8); /* Blood orange with alpha 0.8 */
       border-radius: 10px;
     width: 5vw;
     height: 2vw;
+	z-index: 1;
   }
   #FirstContentBox a {
       display: flex;
@@ -113,4 +115,3 @@ body {
       color: white; /* Change the link color to suit your design */
       font-size: 1vw; /* Adjust the font size proportionate to the box */
   }
-    
