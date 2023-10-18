@@ -76,6 +76,7 @@ body {
 .option-button {
     color: rgb(255, 0, 140);
     text-decoration: none;
+	
 }
 .option-button:hover{
     color: rosybrown;
@@ -124,6 +125,7 @@ body {
 }
 #next-stage:hover {
     color: rgb(0, 81, 255);
+	z-index: 1;
 }
 .Spaceman img {
     width: 200px;
